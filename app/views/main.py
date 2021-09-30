@@ -1,13 +1,13 @@
 # Main View
 
 from flask import Blueprint, jsonify
-from controller.youtube import Youtube
-from controller.api_key import API_Key
+from controller.sample_controller import Sample_Controller
 
 main = Blueprint('main', __name__)
-yt_obj = Youtube()
-apikey_obj = API_Key()
+sample_ctrl = Sample_Controller()
 
-@main.route("/api/main/api_key=<string:api_key>", methods = ['GET'])
+@main.route("/", methods = ['GET'])
 def request(api_key):
-    apikey_obj.check_api_key(api_key)
+    return jsonify(
+        response = "This is a sample REST API"
+    )
