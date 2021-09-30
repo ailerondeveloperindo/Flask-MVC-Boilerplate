@@ -1,4 +1,4 @@
-# Flask-MVC-Boilerplater
+# Flask-MVC-Boilerplate
 Flask MVC Boilerplate for Rest API
 
 Project Structure
