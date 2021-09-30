@@ -7,4 +7,4 @@ install:
   - pip install Flask
 # command to run tests
 script:
-  - pytest
+  - pytest run.py
