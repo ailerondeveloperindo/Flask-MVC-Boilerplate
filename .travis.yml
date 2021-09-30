@@ -8,4 +8,4 @@ install:
   - pip install pymongo
 # command to run tests
 script:
-  - pytest run.py
+  - pytest test_run.py

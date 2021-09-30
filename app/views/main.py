@@ -7,7 +7,7 @@ main = Blueprint('main', __name__)
 sample_ctrl = Sample_Controller()
 
 @main.route("/", methods = ['GET'])
-def request(api_key):
+def request():
     return jsonify(
-        response = "This is a sample REST API"
+        response = "Connected"
     )
